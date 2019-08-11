@@ -1,11 +1,13 @@
 import React from "react"
+import './App.css';
 
 class TodoItem extends React.Component {
   render() {
+    const styleClass = this.props.todo.completed ? "Todo-completed" : "Todo"
     return (
       <div>
-        <p>{this.props.todo.title}</p>
-        <input 
+        <p className={styleClass}>{this.props.todo.title}</p>
+        <input
           type="checkbox"
           id={this.props.todo.id}
           checked={this.props.todo.completed} 
