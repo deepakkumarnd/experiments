@@ -1,0 +1,15 @@
+.App {
+  text-align: left;
+  margin: 10px;
+}
+
+label {
+  display: inline-block;
+  width: 200px;
+}
+
+.textInput {
+  width: 400px;
+  text-decoration: none;
+  padding: 5px;
+}
